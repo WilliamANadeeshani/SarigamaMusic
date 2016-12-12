@@ -44,10 +44,6 @@ Route::get('/markStudentAttendance', 'StudentAttendance@markStudentAttendance')-
 
 Route::get('/studentAttendanceHistory', 'StudentAttendance@getAllStudentAttendance')->name('view_student_attendance_history');
 
-Route::get('/teacherSalary', 'TeacherSalaryController@getName')->name('teacher_salary');
-Route::post('/teacherDetail', 'TeacherSalaryController@getDetail')->name('teacher_detail');
-Route::post('/teacherSalaryUpdate', 'TeacherSalaryController@salaryUpdate')->name('salary_update');
-
 
 Route::group(['middleware' => ['web']], function (){
 
